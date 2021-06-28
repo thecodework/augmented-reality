@@ -81,10 +81,10 @@ class MainActivity : AppCompatActivity() {
 
         when (event?.action) {
             MotionEvent.ACTION_UP -> {
-                Log.d("PinchCheck", event.getX().toString() + "  " + event.getY().toString())
+                Log.d("PinchCheck", "Action up--> "+event.getX().toString() + "  " + event.getY().toString())
             }
             MotionEvent.ACTION_DOWN -> {
-                Log.d("PinchCheck", event.getX().toString() + "  " + event.getY().toString())
+                Log.d("PinchCheck", "Action down--> "+event.getX().toString() + "  " + event.getY().toString())
             }
         }
 
