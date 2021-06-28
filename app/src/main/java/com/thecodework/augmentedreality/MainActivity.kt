@@ -3,6 +3,7 @@ package com.thecodework.augmentedreality
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.MotionEvent
 import android.widget.Toast
 import androidx.annotation.RequiresApi
@@ -60,21 +61,40 @@ class MainActivity : AppCompatActivity() {
         val node = TransformableNode(arFragment!!.transformationSystem)
         node.setParent(anchorNode)
         node.renderable = modelRenderable
-        val ha = Handler()
+        node.select()
+        /*val ha = Handler()
         ha.postDelayed(object : Runnable {
             override fun run() {
                 //call function
 
                 node.scaleController.onContinueTransformation(triggerPinch())
+                Toast.makeText(this@MainActivity, "After 10", Toast.LENGTH_LONG).show()
 
             }
-        }, 10000)
-        node.select()
+        }, 5000)*/
+
+
+    }
+
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+
+
+        when (event?.action) {
+            MotionEvent.ACTION_UP -> {
+                Log.d("PinchCheck", event.getX().toString() + "  " + event.getY().toString())
+            }
+            MotionEvent.ACTION_DOWN -> {
+                Log.d("PinchCheck", event.getX().toString() + "  " + event.getY().toString())
+            }
+        }
+
+        return super.onTouchEvent(event)
+
     }
 
     private fun triggerPinch(): PinchGesture {
         val gesturePointersUtility = GesturePointersUtility(getResources().getDisplayMetrics())
-        val motionEvent = MotionEvent.obtain(0, 0, MotionEvent.ACTION_DOWN, 100f, 100f, 0.5f, 5f, 0, 1f, 1f, 0, 0)
+        val motionEvent = MotionEvent.obtain(1, 1, MotionEvent.ACTION_UP, 100f, 100f, 0.5f, 5f, 0, 1f, 1f, 0, 0)
 
 
         val actionId = motionEvent.getPointerId(motionEvent.actionIndex)
