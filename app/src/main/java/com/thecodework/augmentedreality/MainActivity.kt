@@ -13,11 +13,13 @@ import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.*
 
 class MainActivity : AppCompatActivity(), View.OnTouchListener {
+    private var view: View? = null
     private var arFragment: ArFragment? = null
     private var modelRenderable: ModelRenderable? = null
     var objscale: ScaleGestureDetector? = null
@@ -38,6 +40,7 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
         setUpModel()
         setUpPlane()
 
+        view = findViewById<View>(R.id.view)
         findViewById<View>(R.id.view).setOnTouchListener(this)
     }
 
@@ -89,7 +92,8 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
         val node = TransformableNode(arFragment!!.transformationSystem)
         node.setParent(anchorNode)
         node.renderable = modelRenderable    //model creat
-        // node.scaleController.onContinueTransformation()
+//         node.scaleController.onContinueTransformation(triggerPinch())
+//        view?.isVisible = false
         onScale(node)
         node.select()
 
