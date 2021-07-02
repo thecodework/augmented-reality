@@ -120,19 +120,7 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
                 0
             )
         val actionId = motionEvent.getPointerId(motionEvent.actionIndex)
-        var p = 0
-        // Determine if there is another pointer Id that has not yet been retained.
-        for (i in 0 until motionEvent.pointerCount) {
-            val pointerId = motionEvent.getPointerId(i)
-            if (pointerId == actionId) {
-                continue
-            }
-            if (gesturePointersUtility.isPointerIdRetained(pointerId)) {
-                continue
-            }
-            p = pointerId
-        }
-        return PinchGesture(gesturePointersUtility, motionEvent, p)
+        return PinchGesture(gesturePointersUtility, motionEvent, actionId)
     }
 
     inner class PinzoomListener : ScaleGestureDetector.SimpleOnScaleGestureListener() {
