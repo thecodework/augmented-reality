@@ -1,8 +1,11 @@
 package com.thecodework.augmentedreality
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.MotionEvent
+import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +15,7 @@ import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.ScaleController
 import com.google.ar.sceneform.ux.TransformableNode
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnTouchListener {
     private var arFragment: ArFragment? = null
     private var modelRenderable: ModelRenderable? = null
 
@@ -28,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         arFragment = supportFragmentManager.findFragmentById(R.id.fragment) as ArFragment?
         setUpModel()
         setUpPlane()
+        findViewById<View>(R.id.view).setOnTouchListener(this)
     }
 
 
@@ -52,6 +56,9 @@ class MainActivity : AppCompatActivity() {
             val anchorNode = AnchorNode(anchor)
             anchorNode.setParent(arFragment!!.arSceneView.scene)
             createModel(anchorNode)
+
+
+            Log.d("PinchCheck", "Motion x-->> " + motionEvent.x.toString())
         }
     }
 
@@ -71,6 +78,11 @@ class MainActivity : AppCompatActivity() {
         node.scaleController.maxScale = 1.0f
         node.scaleController.elasticity = 0.5f
         node.scaleController.minScale = 0.25f
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    override fun onTouch(p0: View?, p1: MotionEvent?): Boolean {
+
     }
 
 }
