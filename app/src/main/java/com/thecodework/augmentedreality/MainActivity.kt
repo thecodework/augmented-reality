@@ -156,7 +156,26 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
 
 
     @SuppressLint("ClickableViewAccessibility")
-    override fun onTouch(p0: View?, p1: MotionEvent?): Boolean {
+    override fun onTouch(p0: View?, motionEvent: MotionEvent?): Boolean {
+
+        if (motionEvent != null) {
+            Log.d(
+                "PinchCheck",
+                "Motion Event "
+                        + motionEvent.action + "x axis "
+                        + motionEvent.getX().toString() + " y axis "
+                        + motionEvent.getY().toString() + "down time"
+                        + motionEvent.downTime + "event time"
+                        + motionEvent.eventTime + "pressure"
+                        + motionEvent.pressure + "size"
+                        + motionEvent.size + "x precision"
+                        + motionEvent.xPrecision + "y precision"
+                        + motionEvent.yPrecision + "device id"
+                        + motionEvent.deviceId + "meta state"
+                        + motionEvent.metaState + "edge flag"
+                        + motionEvent.edgeFlags
+            )
+        }
         return true
     }
 
