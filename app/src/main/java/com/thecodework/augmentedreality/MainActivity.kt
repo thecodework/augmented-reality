@@ -5,6 +5,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
+
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
@@ -16,7 +17,7 @@ import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnTouchListener {
     private var arFragment: ArFragment? = null
     private var modelRenderable: ModelRenderable? = null
     var objscale: ScaleGestureDetector? = null
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         setUpModel()
         setUpPlane()
 
+        findViewById<View>(R.id.view).setOnTouchListener(this)
     }
 
 
@@ -78,6 +80,7 @@ class MainActivity : AppCompatActivity() {
                         + motionEvent.edgeFlags
             )
             // objscale?.onTouchEvent(motionEvent)
+
 
         }
     }
@@ -151,6 +154,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+    @SuppressLint("ClickableViewAccessibility")
+    override fun onTouch(p0: View?, p1: MotionEvent?): Boolean {
+        return true
+    }
 
 }
 
