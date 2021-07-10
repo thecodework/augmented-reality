@@ -64,6 +64,10 @@ class MainActivity : AppCompatActivity() {
     Log.d("MainActivity", "Testing Feature")
   }
 
+  private fun testingFeature1(){
+    Log.d("MainActivity", "Testing Feature")
+  }
+
 
 
 }
