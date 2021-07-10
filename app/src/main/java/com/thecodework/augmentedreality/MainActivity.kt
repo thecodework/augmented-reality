@@ -2,6 +2,7 @@ package com.thecodework.augmentedreality
 
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -57,6 +58,10 @@ class MainActivity : AppCompatActivity() {
     node.setParent(anchorNode)
     node.renderable = modelRenderable
     node.select()
+  }
+
+  private fun testingFeature(){
+    Log.d("MainActivity", "Testing Feature")
   }
 
 
