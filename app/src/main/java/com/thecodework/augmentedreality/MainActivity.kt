@@ -17,6 +17,8 @@ import androidx.core.view.isVisible
 import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.*
+import com.google.ar.sceneform.ux.ArFragment
+import com.google.ar.sceneform.ux.TransformableNode
 
 class MainActivity : AppCompatActivity(), View.OnTouchListener {
     private var view: View? = null
@@ -48,16 +50,16 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
     @RequiresApi(Build.VERSION_CODES.N)
     private fun setUpModel() {
         ModelRenderable.builder()
-            .setSource(this, R.raw.astronaut)
-            .build()
-            .thenAccept { renderable: ModelRenderable ->
-                modelRenderable = renderable
-            }
-            .exceptionally { throwable: Throwable? ->
-                Toast.makeText(this@MainActivity, "Model can't be Loaded", Toast.LENGTH_SHORT)
-                    .show()
-                null
-            }
+                .setSource(this, R.raw.astronaut)
+                .build()
+                .thenAccept { renderable: ModelRenderable ->
+                    modelRenderable = renderable
+                }
+                .exceptionally { throwable: Throwable? ->
+                    Toast.makeText(this@MainActivity, "Model can't be Loaded", Toast.LENGTH_SHORT)
+                            .show()
+                    null
+                }
     }
 
     private fun setUpPlane() {
@@ -67,23 +69,22 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
             anchorNode.setParent(arFragment!!.arSceneView.scene)
             createModel(anchorNode)
             Log.d(
-                "PinchCheck",
-                "Motion Event "
-                        + motionEvent.action + "x axis "
-                        + motionEvent.getX().toString() + " y axis "
-                        + motionEvent.getY().toString() + "down time"
-                        + motionEvent.downTime + "event time"
-                        + motionEvent.eventTime + "pressure"
-                        + motionEvent.pressure + "size"
-                        + motionEvent.size + "x precision"
-                        + motionEvent.xPrecision + "y precision"
-                        + motionEvent.yPrecision + "device id"
-                        + motionEvent.deviceId + "meta state"
-                        + motionEvent.metaState + "edge flag"
-                        + motionEvent.edgeFlags
+                    "PinchCheck",
+                    "Motion Event "
+                            + motionEvent.action + "x axis "
+                            + motionEvent.getX().toString() + " y axis "
+                            + motionEvent.getY().toString() + "down time"
+                            + motionEvent.downTime + "event time"
+                            + motionEvent.eventTime + "pressure"
+                            + motionEvent.pressure + "size"
+                            + motionEvent.size + "x precision"
+                            + motionEvent.xPrecision + "y precision"
+                            + motionEvent.yPrecision + "device id"
+                            + motionEvent.deviceId + "meta state"
+                            + motionEvent.metaState + "edge flag"
+                            + motionEvent.edgeFlags
             )
             // objscale?.onTouchEvent(motionEvent)
-
 
         }
     }
@@ -109,20 +110,20 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
     private fun triggerPinch(): PinchGesture {
         val gesturePointersUtility = GesturePointersUtility(getResources().getDisplayMetrics())
         val motionEvent =
-            MotionEvent.obtain(
-                8387,
-                8387,
-                MotionEvent.ACTION_UP,
-                401.44f,
-                780.45f,
-                1.0f,
-                0.0176f,
-                0,
-                1.001f,
-                1.001f,
-                6,
-                0
-            )
+                MotionEvent.obtain(
+                        8387,
+                        8387,
+                        MotionEvent.ACTION_UP,
+                        401.44f,
+                        780.45f,
+                        1.0f,
+                        0.0176f,
+                        0,
+                        1.001f,
+                        1.001f,
+                        6,
+                        0
+                )
         val actionId = motionEvent.getPointerId(motionEvent.actionIndex)
         return PinchGesture(gesturePointersUtility, motionEvent, actionId)
     }
@@ -152,20 +153,20 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
 
         if (motionEvent != null) {
             Log.d(
-                "PinchCheck",
-                "Motion Event "
-                        + motionEvent.action + "x axis "
-                        + motionEvent.getX().toString() + " y axis "
-                        + motionEvent.getY().toString() + "down time"
-                        + motionEvent.downTime + "event time"
-                        + motionEvent.eventTime + "pressure"
-                        + motionEvent.pressure + "size"
-                        + motionEvent.size + "x precision"
-                        + motionEvent.xPrecision + "y precision"
-                        + motionEvent.yPrecision + "device id"
-                        + motionEvent.deviceId + "meta state"
-                        + motionEvent.metaState + "edge flag"
-                        + motionEvent.edgeFlags
+                    "PinchCheck",
+                    "Motion Event "
+                            + motionEvent.action + "x axis "
+                            + motionEvent.getX().toString() + " y axis "
+                            + motionEvent.getY().toString() + "down time"
+                            + motionEvent.downTime + "event time"
+                            + motionEvent.eventTime + "pressure"
+                            + motionEvent.pressure + "size"
+                            + motionEvent.size + "x precision"
+                            + motionEvent.xPrecision + "y precision"
+                            + motionEvent.yPrecision + "device id"
+                            + motionEvent.deviceId + "meta state"
+                            + motionEvent.metaState + "edge flag"
+                            + motionEvent.edgeFlags
             )
         }
         return true
