@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener {
     private fun createModel(anchorNode: AnchorNode) {
         val node = TransformableNode(arFragment!!.transformationSystem)
         node.setParent(anchorNode)
-        node.renderable = modelRenderable    //model creat
+        node.renderable = modelRenderable
 //         node.scaleController.onContinueTransformation(triggerPinch())
 //        view?.isVisible = false
         onScale(node)
