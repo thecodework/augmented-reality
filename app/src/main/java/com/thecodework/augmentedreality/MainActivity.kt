@@ -49,7 +49,9 @@ class MainActivity : AppCompatActivity() {
       val anchor = hitResult.createAnchor()
       val anchorNode = AnchorNode(anchor)
       anchorNode.setParent(arFragment!!.arSceneView.scene)
+//      anchorNode.setParent(arFragment!!.arSceneView.scene)
       createModel(anchorNode)
+//      createModel(anchorNode)
     }
   }
 
