@@ -1,7 +1,7 @@
 # Augmented Reality
 ## About Project
 This app renders and astronaut 3d model on overlapping with camera capture using Augmented reality.
-## Features
+## What we have done ?
 There are some following steps 
 - Api level should be Api 24 -Android 7 or above. Android Studio version Should be 3.1 or higher for Augmented Reality Apps.
 - In build.gradle of App, add a sceneform UX library and Sceneform Assets library.
