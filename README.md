@@ -54,6 +54,7 @@ You will see the astronaut model on the plain surface.
 
 ## Difficulties faced while working on project
 Google senceform (beta) plugin was installing .
+Android -> file -> setting -> plugins -> Google sceneform tools (beta)
 ![image](https://user-images.githubusercontent.com/13745937/126976805-c469e414-941b-4862-8c11-9be7eb914e40.png)
 
 ## Overcome the difficulties
