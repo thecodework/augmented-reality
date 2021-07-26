@@ -49,9 +49,12 @@ There are some following steps
 
 ## Output will be
 You will see the astronaut model on the plain surface.
+![1627296127078](https://user-images.githubusercontent.com/13745937/126976597-1291ba82-a906-451e-b92b-acdb3cba766c.jpg)
+![Screenshot_2021-07-26-16-11-05-182_com example easylearn](https://user-images.githubusercontent.com/13745937/126976629-7b486f6f-66ad-43c3-9687-ac03ac0abdf3.jpg)
 
 ## Difficulties faced while working on project
 Google senceform (beta) plugin was installing .
+![image](https://user-images.githubusercontent.com/13745937/126976805-c469e414-941b-4862-8c11-9be7eb914e40.png)
 
 ## Overcome the difficulties
 Installed android differnt version
