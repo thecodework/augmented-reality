@@ -28,6 +28,8 @@ There are some following steps
 - Add sceneform toolsin Android Studio Under Plugin.
 -  In build.gradle of App, add a sceneform UX library.
 - Add  sceneform plugin.  
+  Android -> file -> setting -> plugins -> Google sceneform tools (beta)
+![image](https://user-images.githubusercontent.com/13745937/126976805-c469e414-941b-4862-8c11-9be7eb914e40.png)
 - Compile Option to support Java which is needed for Sceneform 
 library.
 - In project's build.gradle. Adds the Sceneform plugin.
@@ -76,8 +78,7 @@ You will see the astronaut model on the plain surface.
 
 ## Difficulties faced while working on project
 Google senceform (beta) plugin was installing .
-Android -> file -> setting -> plugins -> Google sceneform tools (beta)
-![image](https://user-images.githubusercontent.com/13745937/126976805-c469e414-941b-4862-8c11-9be7eb914e40.png)
+
 
 ## Overcome the difficulties
 Installed android differnt version
