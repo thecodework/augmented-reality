@@ -85,8 +85,9 @@ You will see the astronaut model on the plain surface.
 
 ## Difficulties faced while working on project
 
-Google senceform (beta) plugin was installing .
-
+- Google senceform (beta) plugin was installing .
+- Making changes in pinch gesture .
+- Making changes in motion event and onTouchListener.
 
 ## Overcome the difficulties
 Installed android differnt version
