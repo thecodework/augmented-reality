@@ -30,8 +30,15 @@ There are some following steps
 - Add  sceneform plugin.  
  **Android** → **file**  → **setting** → **plugins**   → **Google sceneform tools (beta)**  
 ![image](https://user-images.githubusercontent.com/13745937/126976805-c469e414-941b-4862-8c11-9be7eb914e40.png)
-- Compile Option to support Java which is needed for Sceneform 
-library.
+- Compile Option to support Kotlin which is needed for Sceneform library.
+- Steps to follow:  https://developers.google.com/scenefo...
+   	-Import the Sceneform plugin
+	-Convert the model
+	-Configure your project's build.gradle files
+	-Update your AndroidManifest.xml
+	-Load Model
+	-Create model renderables
+	-Build the Augmented Scene 
 - In project's build.gradle. Adds the Sceneform plugin.
 - In Android Manifets.xml file add permission for AR features in app, Camera permission add meta data to make it available for "Google Play Services for AR".
 - Add the fragment as shown which is provided by Sceneform ux library.
