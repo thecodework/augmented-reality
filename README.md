@@ -35,7 +35,7 @@ library.
 - Add the fragment as shown which is provided by Sceneform ux library.
 - Get Sample model from poly.google.com. 
 - Under App folder create a folder sampledata and paste the downloaded obj and .mtl file.
-- ![image](https://user-images.githubusercontent.com/13745937/126974901-ac0f63c5-bd7d-4be6-983d-149d4109b349.png)
+-![image](https://user-images.githubusercontent.com/13745937/127138436-238fda64-0e34-45a5-8576-d11f3f62bd7d.png)
 - Under Res folder-  create raw resources folder
 - import sceneform asset (.sfb)  in Raw folder
 - ![image](https://user-images.githubusercontent.com/13745937/126975456-5d2cabee-d5d2-4201-9b91-518770d07491.png)
