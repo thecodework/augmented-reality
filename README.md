@@ -97,3 +97,8 @@ We were trying to do touchless with help of pinch gesture ontouch event but we a
 
 ## Future plan regarding the development of project
 Our future planning  about this project is to move the 3d model with touchless just moving the fingers or hand from long without touching the screen.
+
+## Deprecation policy
+Apps built with ARCore SDK 1.12.0 or higher are covered by the Cloud Anchor API deprecation policy.
+
+Apps built with ARCore SDK 1.11.0 or lower will be unable to host or resolve Cloud Anchors beginning December 2020 due to the SDK's use of an older, deprecated ARCore Cloud Anchor service.
