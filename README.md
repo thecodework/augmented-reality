@@ -38,7 +38,7 @@ library.
 -![image](https://user-images.githubusercontent.com/13745937/127138436-238fda64-0e34-45a5-8576-d11f3f62bd7d.png)
 - Under Res folder-  create raw resources folder
 - import sceneform asset (.sfb)  in Raw folder
-- ![image](https://user-images.githubusercontent.com/13745937/126975456-5d2cabee-d5d2-4201-9b91-518770d07491.png)
+- ![image](https://user-images.githubusercontent.com/13745937/127138618-5d57603c-ed2e-405e-b554-155dc1f4009e.png)
 - Write down the code in MainActivity as shown in the tutorial.
 - ![image](https://user-images.githubusercontent.com/13745937/126975170-ced983b9-08d4-49d5-a37c-1f2d9e289838.png)
 - So finally we can say we have initialized the fragment then loaded a model then attach the scene to the node.
