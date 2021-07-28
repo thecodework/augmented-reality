@@ -8,7 +8,7 @@ To use Google Play Services for AR, you need an Android device with:
 - ARCore-certification- It already exits in Android devices.
 - At least 1 GB of free space
 - At least one AR app installed
-- [An unmetered mobile network](https://developers.google.com/ar/devices#google_play_devices)
+- [An unmetered mobile network](https://developers.google.com/ar/devices#google_play_devices)- Here you can find device list.
 
 ## How it works
 Google Play Services for AR lets your device provide AR experiences in apps that were created with Google’s AR platform in mind.
