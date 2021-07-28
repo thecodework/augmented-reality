@@ -15,9 +15,9 @@ To use [Google Play Services](https://play.google.com/store/apps/details?id=com.
 
 - Install [Google Play Services](https://play.google.com/store/apps/details?id=com.google.ar.core&hl=en_IN&gl=US) for AR
 - On your Android device, open the Google Play Store app Google Play.
-- Find the Google Play Services for AR app.
+- Find the [Google Play Services](https://play.google.com/store/apps/details?id=com.google.ar.core&hl=en_IN&gl=US) for AR app.
 - Tap Download.
-- 
+ 
 ## About Project
 ARCore is doing two things: tracking the position of the mobile device as it moves, and building its own understanding of the real world. ARCore's motion tracking technology uses the phone's camera to identify interesting points, called features, and tracks how those points move over time. With a combination of the movement of these points and readings from the phone's inertial sensors, ARCore determines both the position and orientation of the phone as it moves through space. In addition to identifying key points, ARCore can detect flat surfaces, like a table or the floor, and can also estimate the average lighting in the area around it. These capabilities combine to enable ARCore to build its own understanding of the world around it. ARCore's understanding of the real world lets you place objects, annotations, or other information in a way that integrates seamlessly with the real world. we can place astronaut on the plane. Motion tracking means that you can move around and view these objects from any angle, and even if you turn around and leave the room, when you come back, the 3D model or annotation will be right where you left it.
 
