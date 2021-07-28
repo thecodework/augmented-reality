@@ -5,7 +5,7 @@
 To use [Google Play Services](https://play.google.com/store/apps/details?id=com.google.ar.core&hl=en_IN&gl=US) for AR, you need an Android device with:
 
 - [A Google Account](https://accounts.google.com/ServiceLogin/signinchooser?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin)
-- [ARCore-certification](https://github.com/thecodework/augmented-reality/blob/master/README.md#:~:text=ARCore--,certification,--%20It%20already%20exist)- It already exist in Android devices.
+- ARCore-certification- It already exist in Android devices.
 - At least 1 GB of free space
 - At least one AR app installed
 - [An unmetered mobile network](https://developers.google.com/ar/devices#google_play_devices)- Here you can find device list.
