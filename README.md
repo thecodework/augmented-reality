@@ -1,14 +1,14 @@
-# Augmented Reality
- ARCore is Google’s platform for building augmented reality experiences. Using different APIs, ARCore enables your phone to sense its environment, understand the world and  interact with information. Some of the APIs are available across Android and iOS to enable shared AR experiences.
+# Augmented Reality (Using [ARcore sceneform Library](https://developers.google.com/sceneform/develop))
+ [ARCore](https://developers.google.com/sceneform/develop) is Google’s platform for building augmented reality experiences. Using different APIs, ARCore enables your phone to sense its environment, understand the world and  interact with information. Some of the APIs are available across Android and iOS to enable shared AR experiences.
  
 ## What you need
 To use Google Play Services for AR, you need an Android device with:
 
-- A Google Account
-- ARCore-certification
+- [A Google Account](https://accounts.google.com/ServiceLogin/signinchooser?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin)
+- ARCore-certification- It already exits in Android devices.
 - At least 1 GB of free space
 - At least one AR app installed
-- An unmetered mobile network
+- [An unmetered mobile network](https://developers.google.com/ar/devices#google_play_devices)
 
 ## How it works
 Google Play Services for AR lets your device provide AR experiences in apps that were created with Google’s AR platform in mind.
