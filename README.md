@@ -93,7 +93,7 @@ You will see the astronaut model on the plain surface.
 Installed android differnt version
 
 ## Tried to do but not succeed
-We were trying to do touchless with help of pinch gesture ontouch event but we are not able to do it.
+We were trying to do touchless with help of pinch gesture ontouch event but we are not able to do it.To move the model we tried motion event and pinch gestures. We took the the value getting from pinch gesture detection and pass it in the parameters of motion event to move the 3D model but we fail in it.
 
 ## Future plan regarding the development of project
 Our future planning  about this project is to move the 3d model with touchless just moving the fingers or hand from long without touching the screen.
