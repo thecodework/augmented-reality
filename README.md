@@ -80,6 +80,7 @@ There are some following steps
 
 ## Output will be
 You will see the astronaut model on the plain surface.
+! [](![ezgif com-gif-maker](https://user-images.githubusercontent.com/78479435/127455465-58fd042e-f7c8-4595-9293-8bf878706336.gif). gif)
 ![1627296127078](https://user-images.githubusercontent.com/13745937/126976597-1291ba82-a906-451e-b92b-acdb3cba766c.jpg)
 ![Screenshot_2021-07-26-16-11-05-182_com example easylearn](https://user-images.githubusercontent.com/13745937/126976629-7b486f6f-66ad-43c3-9687-ac03ac0abdf3.jpg)
 
