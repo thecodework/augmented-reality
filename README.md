@@ -86,9 +86,8 @@ You will see the astronaut model on the plain surface.
 
 ## Difficulties faced while working on project
 
-- Google senceform (beta) plugin was installing .
-- Making changes in pinch gesture .
-- Making changes in motion event and onTouchListener.
+- When I want to install Google Sceneform Tools plugin. But after installation and restart the IDE I see this notification:"Plugin Error: Plugin "Google Sceneform Tools (Beta)"   is incompatible (supported only in IntelliJ IDEA)."
+- To move the model we tried motion event and pinch gestures. We took the the value getting from pinch gesture detection and pass it in the parameters of motion event to move the 3D model but we fail in it.
 
 ## Overcome the difficulties
 Installed android differnt version
