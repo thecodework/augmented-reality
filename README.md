@@ -39,8 +39,8 @@ There are some following steps
 	- Load Model
 	- Create model renderables
 	- Build the Augmented Scene 
-- In project's ~build.gradle.~ Adds the [Sceneform plugin](https://developers.google.com/sceneform/develop/getting-started).
-- In Android ~Manifets.xml~ file add permission for [AR features](https://developers.google.com/ar/develop/java/enable-arcore) in app, [Camera permission](https://developer.android.com/guide/topics/media/camera) add meta data to make it available for "Google Play Services for AR".
+- In project's build.gradle. Adds the [Sceneform plugin](https://developers.google.com/sceneform/develop/getting-started).
+- In Android Manifets.xml file add permission for [AR features](https://developers.google.com/ar/develop/java/enable-arcore) in app, [Camera permission](https://developer.android.com/guide/topics/media/camera) add meta data to make it available for "Google Play Services for AR".
 - Add the fragment as shown which is provided by [Sceneform ux library](https://developers.google.com/sceneform/reference/com/google/ar/sceneform/ux/package-summary).
 - Get Sample model from [poly.google.com](https://support.google.com/poly/answer/10192635). 
 - Under App folder create a folder sampledata and paste the downloaded object and .mtl file.
