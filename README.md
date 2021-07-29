@@ -64,7 +64,7 @@ There are some following steps
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
     implementation 'com.google.ar.sceneform:assets:1.15.0'
 ```
-![image](https://user-images.githubusercontent.com/13745937/126975384-956ba0b1-7e2c-47c4-a0e4-c9312e84caed.png)
+
 	
 ## Mainifest :
 ```sh
@@ -75,22 +75,15 @@ There are some following steps
 ```sh
 <meta-data android:name="com.google.ar.core" android:value="required" />
 ```
- ![image](https://user-images.githubusercontent.com/13745937/126975549-7d6c4a90-a097-4fad-9499-df3f318b2b35.png)
- ![image](https://user-images.githubusercontent.com/13745937/126975589-6406b531-5cea-4214-8c44-b50379bd136d.png)
-
+ 
 ## Output will be
 You will see the astronaut model on the plain surface.
 - ![ezgif com-gif-maker](https://user-images.githubusercontent.com/78479435/127455465-58fd042e-f7c8-4595-9293-8bf878706336.gif)
-  ![1627296127078](https://user-images.githubusercontent.com/13745937/126976597-1291ba82-a906-451e-b92b-acdb3cba766c.jpg)
-  ![Screenshot_2021-07-26-16-11-05-182_com example easylearn](https://user-images.githubusercontent.com/13745937/126976629-7b486f6f-66ad-43c3-9687-ac03ac0abdf3.jpg)
-
+ 
 ## Difficulties faced while working on project
 
 - When I want to install Google Sceneform Tools plugin. But after installation and restart the IDE I see this notification:"Plugin Error: Plugin "Google Sceneform Tools (Beta)"   is incompatible (supported only in IntelliJ IDEA)."
 - To move the model we tried motion event and pinch gestures. We took the the value getting from pinch gesture detection and pass it in the parameters of motion event to move the 3D model but we fail in it.
-
-## Overcome the difficulties
-Installed android differnt version
 
 ## Tried to do but not succeed
 We were trying to do touchless with help of pinch gesture ontouch event but we are not able to do it.To move the model we tried motion event and pinch gestures. We took the the value getting from pinch gesture detection and pass it in the parameters of motion event to move the 3D model but we fail in it.
