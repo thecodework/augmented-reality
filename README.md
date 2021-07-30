@@ -1,4 +1,4 @@
-# Augmented Reality (Using [ARcore sceneform Library](https://developers.google.com/sceneform/develop))
+# Augmented Reality (Using [ARcore Sceneform Library](https://developers.google.com/sceneform/develop))
  [ARCore](https://developers.google.com/sceneform/develop) is Google’s platform for building augmented reality experiences. Using different APIs, [ARCore](https://developers.google.com/sceneform/develop) enables your phone to sense its environment, understand the world and  interact with information. Some of the APIs are available across Android and iOS to enable shared AR experiences.
  
 ## What you need
