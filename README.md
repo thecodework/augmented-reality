@@ -52,7 +52,7 @@ There are some following steps
 - So finally we can say we have initialized the fragment then loaded a model then attach the scene to the node.
 - Run the App.
 
-## Dependencies with their versions :
+## Libraries/Dependencies with their versions :
 ```sh
      implementation 'androidx.appcompat:appcompat:1.3.0'
      implementation 'com.google.android.material:material:1.3.0'
@@ -65,7 +65,7 @@ There are some following steps
 ```
 
 	
-## Mainifest :
+## Perissions :
 ```sh
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-permission android:name="android.permission.INTERNET"/>
