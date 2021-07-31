@@ -53,27 +53,10 @@ There are some following steps
 - Run the App.
 
 ## Libraries/Dependencies with their versions :
-```sh
-     implementation 'androidx.appcompat:appcompat:1.3.0'
-     implementation 'com.google.android.material:material:1.3.0'
-```
-```sh
-    //Sceneform
-    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.4.0'
-    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
-    implementation 'com.google.ar.sceneform:assets:1.15.0'
-```
-
+- [Sceneform](https://developers.google.com/sceneform/develop)- Sceneform is a 3D framework that makes it easy for you to build ARCore apps without OpenGL. We are using 1.15.0 version of google.ar.sceneform.ux:sceneform-ux.
 	
-## Perissions :
-```sh
-<uses-permission android:name="android.permission.CAMERA"/>
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-feature android:name="android.hardware.camera.ar" android:required="true" />
-```
-```sh
-<meta-data android:name="com.google.ar.core" android:value="required" />
-```
+## Permissions :
+- We are using [Camera] permission(https://developer.android.com/guide/topics/media/camera), [Internet permission](https://developer.android.com/training/basics/network-ops/connecting) and [hardware.camera.ar] permission(https://developers.google.com/ar/develop/java/enable-arcore).
  
 ## Output will be
 You will see the astronaut model on the plain surface.
