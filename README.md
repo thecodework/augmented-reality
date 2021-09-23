@@ -56,7 +56,7 @@ There are some following steps
 - [Sceneform](https://developers.google.com/sceneform/develop)- Sceneform is a 3D framework that makes it easy for you to build ARCore apps without OpenGL. We are using 1.15.0 version of google.ar.sceneform.ux:sceneform-ux.
 	
 ## Permissions :
-- We are using [Camera permission](https://developer.android.com/guide/topics/media/camera), [Internet permission](https://developer.android.com/training/basics/network-ops/connecting) and [hardware.camera.ar permission](https://developers.google.com/ar/develop/java/enable-arcore).
+- We are using [Camera permission](https://developer.android.com/guide/topics/media/camera) and [hardware.camera.ar permission](https://developers.google.com/ar/develop/java/enable-arcore).
  
 ## Output will be
 You will see the astronaut model on the plain surface.
