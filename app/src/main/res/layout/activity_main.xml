@@ -16,6 +16,7 @@
     <View
         android:id="@+id/view"
         android:background="@color/purple_200"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>
