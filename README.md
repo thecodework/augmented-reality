@@ -1,7 +1,10 @@
 # Augmented Reality
+
 ## About Project
 This app renders and astronaut 3d model on overlapping with camera capture using Augmented reality.
-## What we have done ?
+
+## Installation Steps
+
 There are some following steps 
 - Api level should be Api 24 -Android 7 or above. Android Studio version Should be 3.1 or higher for Augmented Reality Apps.
 - In build.gradle of App, add a sceneform UX library and Sceneform Assets library.
@@ -10,9 +13,32 @@ There are some following steps
 - Add the fragment as shown which is provided by Sceneform ux library.
 - Install google sceneform tools (beta) plugin from android studio only.
 - Get Sample model from poly.google.com. 
+ 
+ 
 - Upload the model to server and get the url.
 - Write down the code in MainActivity as shown in the tutorial.
+ 
+
 - Run the App.
+
+## Dependencies with their versions :
+
+     implementation 'androidx.appcompat:appcompat:1.3.0'
+     implementation 'com.google.android.material:material:1.3.0'
+
+    //Sceneform
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.4.0'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+    implementation 'com.google.ar.sceneform:assets:1.15.0'
+	 
+	
+## Mainifest :
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-feature android:name="android.hardware.camera.ar" android:required="true" />
+
+<meta-data android:name="com.google.ar.core" android:value="required" />
+
 
 ## Output will be
 You will see the astronaut model on the plain surface.
@@ -25,6 +51,5 @@ Installed android differnt version
 
 ## Tried to do but not succeed
 We were trying to do touchless with help of pinch gesture ontouch event but we are not able to do it.
-
 ## Future plan regarding the development of project
 Our future planning  about this project is to move the 3d model with touchless just moving the fingers or hand from long without touching the screen.
