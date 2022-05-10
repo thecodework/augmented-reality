@@ -60,7 +60,4 @@ class MainActivity : AppCompatActivity() {
     node.renderable = modelRenderable
     node.select()
   }
-
-
-
 }

@@ -57,7 +57,7 @@ There are some following steps
 	
 ## Permissions :
 - We are using [Camera permission](https://developer.android.com/guide/topics/media/camera) and [hardware.camera.ar permission](https://developers.google.com/ar/develop/java/enable-arcore).
- 
+
 ## Output will be
 You will see the astronaut model on the plain surface.
 - ![ezgif com-gif-maker](https://user-images.githubusercontent.com/78479435/127455465-58fd042e-f7c8-4595-9293-8bf878706336.gif)
