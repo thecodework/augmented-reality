@@ -1,18 +1,20 @@
 package com.thecodework.augmentedreality
 
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.google.ar.sceneform.AnchorNode
+import com.google.ar.sceneform.assets.RenderableSource
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
 
 class MainActivity : AppCompatActivity() {
     private var arFragment: ArFragment? = null
-    private var modelRenderable: ModelRenderable? = null
+    private var modelRenewable: ModelRenderable? = null
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,14 +30,22 @@ class MainActivity : AppCompatActivity() {
         setUpPlane()
     }
 
-
     @RequiresApi(Build.VERSION_CODES.N)
     private fun setUpModel() {
         ModelRenderable.builder()
-            .setSource(this, R.raw.astronaut)
+            .setSource(
+                this, RenderableSource.builder()
+                    .setSource(
+                        this,
+                        Uri.parse("astro/astronaut.glb"),
+                        RenderableSource.SourceType.GLB
+                    )
+                    .setRecenterMode(RenderableSource.RecenterMode.CENTER)
+                    .build()
+            )
             .build()
-            .thenAccept { renderable: ModelRenderable ->
-                modelRenderable = renderable
+            .thenAccept { renewable: ModelRenderable ->
+                modelRenewable = renewable
             }
             .exceptionally {
                 Toast.makeText(this@MainActivity, "Model can't be Loaded", Toast.LENGTH_SHORT)
@@ -56,7 +66,7 @@ class MainActivity : AppCompatActivity() {
     private fun createModel(anchorNode: AnchorNode) {
         val node = TransformableNode(arFragment!!.transformationSystem)
         node.setParent(anchorNode)
-        node.renderable = modelRenderable
+        node.renderable = modelRenewable
         node.scaleController.maxScale = 0.5f
         node.scaleController.minScale = 0.25f
         node.select()
