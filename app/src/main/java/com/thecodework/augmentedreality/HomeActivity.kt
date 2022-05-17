@@ -23,15 +23,17 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setListener() {
         tvView.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("model", "astro/astronaut.glb")
-            startActivity(intent)
+            model("astro/astronaut.glb")
         }
         tvHorse.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("model", "astro/horse.glb")
-            startActivity(intent)
+            model("astro/horse.glb")
         }
+    }
+
+    private fun model(model: String) {
+        val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("model", model)
+        startActivity(intent)
     }
 
 
