@@ -15,6 +15,7 @@ import com.google.ar.sceneform.ux.TransformableNode
 class MainActivity : AppCompatActivity() {
     private var arFragment: ArFragment? = null
     private var modelRenewable: ModelRenderable? = null
+    private lateinit var model: String
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.N)
     private fun init() {
+        model = intent.getStringExtra("model").toString()
         arFragment = supportFragmentManager.findFragmentById(R.id.fragment) as ArFragment?
         setUpModel()
         setUpPlane()
@@ -37,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 this, RenderableSource.builder()
                     .setSource(
                         this,
-                        Uri.parse("astro/astronaut.glb"),
+                        Uri.parse(model),
                         RenderableSource.SourceType.GLB
                     )
                     .setRecenterMode(RenderableSource.RecenterMode.CENTER)
